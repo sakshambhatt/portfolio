@@ -1,42 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 :root {
-
     --primary-color: #EF4444;
     --dark-gray: #4B5563;
+    --off-white: #F3F4F6;
 }
 
 body {
-
     font-family: 'Open Sans', sans-serif;
 }
 
 hr {
-
     margin: 1rem 0rem;
 }
 
 /* Container */
 
 .container {
-
     padding: 0rem 1rem;
 }
 
 .container-center {
-
     max-width: 600px;
     margin: auto;
 }
 
 /*links*/
 .link {
-
     text-decoration: none;
     padding: 0.5rem 1rem;
 }
 .primary-link {
-
     background-color: var(--primary-color);
     padding: 0.5rem 1rem;
     color: white;
@@ -44,7 +38,6 @@ hr {
 }
 
 .secondary-link {
-
     color: var(--primary-color);
     border-radius: 0.5rem;
     border: 1px solid var(--primary-color);
@@ -53,18 +46,15 @@ hr {
 /* lists */
 
 .sans-bullet {
-
     list-style: none;
 }
 
 .list-item-inline {
-
     display: inline;
     padding: 0rem 0.5rem;
 }
 
 .navigation {
-
     background-color: var(--primary-color);
     color: white;
     padding: 1rem;
@@ -72,42 +62,51 @@ hr {
 }
 
 .navigation .link {
-    
     color: white;
 }
 
 .navigation .nav-brand {
-    
     font-weight: bold;
     font-size: 1.1rem;
 }
 
 .navigation .nav-pills {
-
     text-align: right;
 }
 
 .navigation .link-active {
-
     font-weight: bold;
 }
 
 /* hero */
 
 .hero {
-
     padding: 2rem 0rem;
     text-align: center;
 }
 
 .hero .hero-img {
-
     max-width: 350px;
     display: block;
     margin: auto;
 }
 
 .hero .hero-heading {
-
     color: var(--dark-gray);
+}
+.hero span {
+    color: var(--primary-color);
+}
+
+.section {
+    padding: 2rem;
+}
+
+
+.section h1 {
+    text-align: center;
+}
+
+.ow {
+    background-color: var(--off-white);
 }
