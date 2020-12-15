@@ -3,6 +3,7 @@
 :root {
 
     --primary-color: #EF4444;
+    --dark-gray: #4B5563;
 }
 
 body {
@@ -89,4 +90,24 @@ hr {
 .navigation .link-active {
 
     font-weight: bold;
+}
+
+/* hero */
+
+.hero {
+
+    padding: 2rem 0rem;
+    text-align: center;
+}
+
+.hero .hero-img {
+
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.hero .hero-heading {
+
+    color: var(--dark-gray);
 }
