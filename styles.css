@@ -98,6 +98,8 @@ hr {
     color: var(--primary-color);
 }
 
+/* section */
+
 .section {
     padding: 2rem;
 }
@@ -109,4 +111,22 @@ hr {
 
 .ow {
     background-color: var(--off-white);
+}
+
+/* footer */
+
+.footer {
+    background-color: var(--primary-color);
+    padding: 2rem 0rem;
+    text-align: center;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.footer .link {
+    color: white;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
 }
