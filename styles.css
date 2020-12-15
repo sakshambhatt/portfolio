@@ -10,6 +10,11 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+hr {
+
+    margin: 1rem 0rem;
+}
+
 /* Container */
 
 .container {
@@ -33,6 +38,7 @@ body {
 
     background-color: var(--primary-color);
     padding: 0.5rem 1rem;
+    color: white;
     border-radius: 0.5rem;
 }
 
@@ -41,4 +47,17 @@ body {
     color: var(--primary-color);
     border-radius: 0.5rem;
     border: 1px solid var(--primary-color);
+}
+
+/* lists */
+
+.sans-bullet {
+
+    list-style: none;
+}
+
+.list-item-inline {
+
+    display: inline;
+    padding: 0rem 0.5rem;
 }
