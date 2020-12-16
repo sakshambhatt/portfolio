@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blockchain explained">
+    <meta name="keywords" content="blockchain, technology">
+    <meta name="author" content="Saksham Bhatt">
+    <title>Blockchain explained, simply</title>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <nav class="navigation container">
+        <div class="nav-brand">Saksham Bhatt</div>
+        <ul class="sans-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">Home</a>
+            </li>
+            <li class="list-item-inline">
+                <a href="projects.html" class= "link">Projects</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="blogs.html">Blogs</a>
+            </li>
+        </ul>
+    </nav>
+    <header class="hero">
+        <h1 class="hero-heading">Blockchain explained, simply</h1>
+        <img src="images/blockchain.svg" class="hero-img"/>
+    </header>
+
+    <section class="section">
+        <div class="container-center">
+            <h1>What's Blockchain?</h1>
+            <p>To put it bluntly, a chain of blocks made up of data.</p>
+            <ol>
+                <li><a target="_blank" href="https://www.geeksforgeeks.org/hashing-data-structure/" class="link" style="padding: 0rem 0rem;" >hash</a></li>
+                <li>the hash of the previous block</li>
+                <li>data</li> 
+            </ol>
+        </div>
+   </section>
+
+   <section class="section ow">
+        <div class="container-center">
+            <h1>Peeling layers of abstractions:</h1>
+            <ol>
+                <li>
+                    When a block is created its hash is calculated which is unique to each block. If you tamper with a block, it’s hash changes which would make all the following blocks invalid. Also if some data must be changed, you have to create a new block stating the change in the desired block thus leaving a trail, just like a ledger of property. In public records, it is written down who originally owned the land, then who bought it from them and so on.
+                </li>
+                <br>
+                <li>
+                    Now the problem is, computers these days can easily calculate hashes in range of 100k/s, this makes use of hash pretty easy to beat as someone using a fairly powerful machine can just tamper with the block they want to and then recalculate hashes of the entire blockchain too. To mitigate this, blockchain uses a concept called ‘proof of work’.
+                </li>
+                <br>
+                <li>
+                    Proof of Work is a requirement, that expensive computations (mining) must be performed in order to facilitate transactions. Essentially PoW slows down the creation of new blocks. As in the case of bitcoins, each transaction creates a new block and that requires ~10 min of time. Thus if you tamper with one block you will have to perform PoW for all the blocks.
+                </li>
+                <br>
+                <li>
+                    Going back to the concept of ledgers, in the blockchain, there is a single ledger, of which everyone has a copy. Now, who is this everyone? Well, a <a href="https://www.computerworld.com/article/2588287/networking-peer-to-peer-network.html" target="_blank" class="link" style="padding: 0rem 0rem;">P2P network</a> is created and every participating member has a copy of the ledger (in case of bitcoin; Merkel trees, a form of data structure are used) and thus everyone can validate the data; leading to a consensus that is ‘trustless’ or that ‘distributes the trust’. In the P2P network , every member is a node. Blocks that are tampered with will be rejected by other nodes. Also, you don’t have an intermediary party (like banks) which all participants trust, but all the participants themselves validate each others’ work and thus trust is distributed. Plus there is no extra cost like banks take a cut when you transfer money from one country to another and speed of transaction is much more (like bitcoin). To realistically compromise a blockchain, you'll have to breach and change a single block, redo PoW for all blocks, take control of at least 50% of P2P network; then only will your tampered block be accepted by the network
+                </li>
+                <br>
+                <li>
+                    An analogy to this distributed trust is a kitty party, wherein a bunch of women gather, put together an amount of money and decide to give all that money to a single member among them. Here they have a consensus and there is no trust (intermediary party like a broker), also the trust is distributed among all participating members.
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container-center">
+            <h1>Questions:</h1>
+            <p>Now all this is fine, but when I stopped and thought about it, a question popped in my mind; isn’t this at the core same as a linked list? The answers aren’t specific but here, take a look:</p>
+            <ol>
+                <li>
+                    <a href="https://www.quora.com/Is-a-blockchain-essentially-a-linked-list" target="_blank" class="link" style="padding: 0rem 0rem;" >Answer on Quora</a>
+                </li>
+                <li>
+                    <a href="https://www.quora.com/Is-a-blockchain-essentially-a-linked-list" target="_blank" class="link" style="padding: 0rem 0rem;" >Answer on StackOverflow</a>
+                </li>
+            </ol>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-header">Social Media</div>
+        <ul class="social-links">
+            <li class="list-item-inline">
+                <a class="link sans-bullet" href="https://twitter.com/lucksomecutt/" target="_blank">Twitter</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link sans-bullet" href="https://github.com/sakshambhatt/" target="_blank">Github
+                </a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link sans-bullet" href="https://www.linkedin.com/in/saksham-bhatt-13a177182/" target="_blank">LinkedIn</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
