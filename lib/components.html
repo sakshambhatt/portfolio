@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Library</title>
+
+    <link href="../styles.css" rel="stylesheet" />
+</head>
+<body>
+
+    <h1>A component library made by Saksham:</h1>
+    <p>I am going to be a neogrammer and I am making a library which give HTML a neat and <strong>consistent</strong> look.</p>
+
+    <hr>
+
+    <h2>@typography</h2>
+    <h1>Biggest heading</h1>
+    <h2>2nd biggest heading</h2>
+    <p>Normal text.</p>
+    <p><strong>This is a bold text paragraph.</strong></p>
+    <small>Smaller text.</small>
+
+    <hr>
+
+    <h2>@containers</h2>
+    <h3>fluid container</h3>
+    <div class="container">This is normal text. It is free flowing and will wrap at the end of the screen.</div>
+
+    <h3>center container</h3>
+    <div class="container container-center">This is a centered text. It will be shown in the center of the screen. If the screen is not as big, it may take up the entire width of the screen</div>
+
+    <hr>
+
+    <h2>@links</h2>
+    <a href="/" class= "primary-link link">Primary Link</a>
+    <a href="/" class = "secondary-link link">Secondary Link</a>
+
+    <hr>
+
+    <h2>@lists</h2>
+    <h3>Unordered list without bullets</h3>
+    <ul class="sans-bullet">
+        <li>Item one</li>
+        <li>Item two</li>
+        <li>Item three</li>
+    </ul>
+
+    <h3>Unordered inline list</h3>
+    <ul class="sans-bullet">
+        <li class="list-item-inline">Inline item one</li>
+        <li class="list-item-inline">Inline item two</li>
+        <li class="list-item-inline">Inline item three</li>
+    </ul>
+
+    <h3>Reverse ordered list</h3>
+    <ol reversed>
+        <li>milk</li>
+        <li>egg</li>
+        <li>bread</li> 
+    </ol>
+
+    <hr>
+
+    <h2>@nav</h2>
+    <nav class="navigation container">
+        <div class="nav-brand">IamBrand</div>
+        <ul class="sans-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">Home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">Products</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="/">About</a>
+            </li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <h2>@header</h2>
+
+    <header class="hero">
+        <img src="../images/hero.svg" class="hero-img"/>
+        <h1 class="hero-heading">Saksham Bhatt, a <span>web developer</span></h1>
+    </header>
+
+    <hr>
+
+    <h2>@section</h2>
+   <section class="section">
+        <div class="container-center">
+            <h1>white section</h1>
+            <p>A section with white background. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent leo eros, laoreet id arcu et, volutpat dapibus urna. Aliquam viverra imperdiet ligula. Aliquam orci ipsum, posuere malesuada lectus et, sollicitudin aliquam nibh. Proin vitae condimentum mi. Morbi consequat metus eget mi imperdiet fermentum. Duis pulvinar nisl sed egestas accumsan. Morbi.</p>
+        </div>
+   </section>
+
+    <section class="section ow">
+        <div class="container-center">
+            <h1>off-white section</h1>
+            <p>A section with gray background. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent leo eros, laoreet id arcu et, volutpat dapibus urna. Aliquam viverra imperdiet ligula. Aliquam orci ipsum, posuere malesuada lectus et, sollicitudin aliquam nibh. Proin vitae condimentum mi. Morbi consequat metus eget mi imperdiet fermentum. Duis pulvinar nisl sed egestas accumsan. Morbi.</p>
+        </div>
+    </section>
+
+    <hr>
+
+    <footer class="footer">
+        <div class="footer-header">BrandName</div>
+        <ul class="social-links">
+            <li class="list-item-inline">
+                <a class="link sans-bullet" href="/">socialOne</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link sans-bullet" href="/">socialTwo</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link sans-bullet" href="/">socialThree</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

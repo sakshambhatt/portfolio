@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", "sans-serif";
     margin: 0rem;
 }
 
@@ -59,7 +59,7 @@ hr {
     background-color: var(--primary-color);
     color: white;
     padding: 1rem;
-    border-radius: 0.5rem;
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
 }
 
 .navigation .link {
@@ -118,14 +118,20 @@ hr {
 
 .footer {
     background-color: var(--primary-color);
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
     padding: 2rem 0rem;
     text-align: center;
     color: white;
-    border-radius: 0.5rem;
+    border-radius: 0rem 0rem 0.5 rem 0.5rem;
 }
 
 .footer .link {
     color: white;
+}
+
+.footer .footer-header {
+    font-size: large;
+    font-weight: bold;
 }
 
 .footer ul {
